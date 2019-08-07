@@ -48,9 +48,9 @@ public class User implements Comparable<User> {
     @Override
     public int compareTo(User o) {
 //        if (name==o.name) {
-//            return id.compareTo(o.id);
+            return id.compareTo(o.id);
 //        }else {
-            return name.compareTo(o.name);
+//            return name.compareTo(o.name);
 //        }
     }
 
