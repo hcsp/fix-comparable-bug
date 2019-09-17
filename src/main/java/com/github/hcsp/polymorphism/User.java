@@ -54,7 +54,10 @@ public class User implements Comparable<User> {
     @Override
     public int compareTo(User o) {
         int num = name.compareTo(o.name);
-        return num == 0 ? id.compareTo(o.id) : num;
+        if(num == 0){
+            return id.compareTo(o.id);
+        }
+        return num;
     }
 
     public static void main(String[] args) {
