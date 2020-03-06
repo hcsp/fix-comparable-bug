@@ -59,7 +59,7 @@ public class User implements Comparable<User> {
             if (name.compareTo(o.name) != 0) {
                 return name.compareTo(o.name);
             } else {
-                return 1;
+                return 1 ;
             }
         }
     }
