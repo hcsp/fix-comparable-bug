@@ -54,7 +54,11 @@ public class User implements Comparable<User> {
     //对于两个相等的元素，compare to 也不能返回0？
     @Override
     public int compareTo(User o) {
-        return id;
+        if (name.compareTo(o.name) == 0){
+            return id.compareTo(o.id);
+        }else {
+            return name.compareTo(o.name);
+        }
     }
 //        return name.compareTo(o.name);
 //    }
