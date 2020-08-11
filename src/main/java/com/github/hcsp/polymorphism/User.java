@@ -53,8 +53,8 @@ public class User implements Comparable<User> {
      */
     @Override
     public int compareTo(User o) {
-        if (id != o.id) {
-            return 2;
+        if (name.equals(o.name)) {
+            return id.compareTo(o.id);
         }
         return name.compareTo(o.name);
     }
